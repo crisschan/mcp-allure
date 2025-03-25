@@ -1,9 +1,9 @@
 # MCP-Allure
-MCP-Allure is a MCP server that read Allure reports and return a LLM-friendly formats. 
+MCP-Allure is a MCP server that reads Allure reports and returns them in LLM-friendly formats.
 
 # Motivation
 
-As AI and Large Language Models (LLMs) become increasingly integral to software development, there is a growing need to bridge the gap between traditional test reporting and AI-assisted analysis. Traditional allure test report formats, while human-readable, aren't optimized for LLM consumption and processing.
+As AI and Large Language Models (LLMs) become increasingly integral to software development, there is a growing need to bridge the gap between traditional test reporting and AI-assisted analysis. Traditional Allure test report formats, while human-readable, aren't optimized for LLM consumption and processing.
 
 MCP-Allure addresses this challenge by transforming Allure test reports into LLM-friendly formats. This transformation enables AI models to better understand, analyze, and provide insights about test results, making it easier to:
 
@@ -15,7 +15,7 @@ MCP-Allure addresses this challenge by transforming Allure test reports into LLM
 
 By optimizing test reports for LLM consumption, MCP-Allure helps development teams leverage the full potential of AI tools in their testing workflow, leading to more efficient and intelligent test analysis and maintenance.
 
-# Problem Solved
+# Problems Solved
 - **Efficiency**: Traditional test reporting formats are not optimized for AI consumption, leading to inefficiencies in test analysis and maintenance.
 - **Accuracy**: AI models may struggle with interpreting and analyzing test reports that are not in a format optimized for AI consumption.
 - **Cost**: Converting test reports to LLM-friendly formats can be time-consuming and expensive.
@@ -28,7 +28,7 @@ By optimizing test reports for LLM consumption, MCP-Allure helps development tea
 - **Accuracy**: Converts test reports with high accuracy.
 
 # Installation
-To install mcp-repo2llm by uv:
+To install mcp-repo2llm using uv:
 ```
 {
   "mcpServers": {
@@ -49,30 +49,30 @@ To install mcp-repo2llm by uv:
 # Tool
 ##  get_allure_report
 
-- read allure report and return json data
-- input:
-  - report_dir: allure html  report path
-- return:
-  - string,formatted json data,like this:
+- Reads Allure report and returns JSON data
+- Input:
+  - report_dir: Allure HTML report path
+- Return:
+  - String, formatted JSON data, like this:
 ```
 {
     "test-suites": [
         {
-            "name": "测试套件名称",
-            "title": "套件标题",
-            "description": "套件描述",
+            "name": "test suite name",
+            "title": "suite title",
+            "description": "suite description",
             "status": "passed",
-            "start": "时间戳",
-            "stop": "时间戳",
+            "start": "timestamp",
+            "stop": "timestamp",
             "test-cases": [
                 {
-                    "name": "测试用例名称",
-                    "title": "用例标题",
-                    "description": "用例描述",
+                    "name": "test case name",
+                    "title": "case title",
+                    "description": "case description",
                     "severity": "normal",
                     "status": "passed",
-                    "start": "时间戳",
-                    "stop": "时间戳",
+                    "start": "timestamp",
+                    "stop": "timestamp",
                     "labels": [
 
                     ],
@@ -81,11 +81,11 @@ To install mcp-repo2llm by uv:
                     ],
                     "steps": [
                         {
-                            "name": "步骤名称",
-                            "title": "步骤标题",
+                            "name": "step name",
+                            "title": "step title",
                             "status": "passed",
-                            "start": "时间戳",
-                            "stop": "时间戳",
+                            "start": "timestamp",
+                            "stop": "timestamp",
                             "attachments": [
 
                             ],
