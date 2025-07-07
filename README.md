@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/crisschan-mcp-allure-badge.png)](https://mseep.ai/app/crisschan-mcp-allure)
+
 # MCP-Allure
 [![smithery badge](https://smithery.ai/badge/@crisschan/mcp-allure)](https://smithery.ai/server/@crisschan/mcp-allure)
 MCP-Allure is a MCP server that reads Allure reports and returns them in LLM-friendly formats.
