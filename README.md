@@ -1,5 +1,5 @@
 # MCP-Allure
-[![smithery badge](https://smithery.ai/badge/@crisschan/mcp-allure)](https://smithery.ai/server/@crisschan/mcp-allure)
+
 MCP-Allure is a MCP server that reads Allure reports and returns them in LLM-friendly formats.
 
 # Motivation
@@ -28,16 +28,8 @@ By optimizing test reports for LLM consumption, MCP-Allure helps development tea
 - **Cost**: Converts test reports at a low cost.
 - **Accuracy**: Converts test reports with high accuracy.
 
-# Installation
-### Installing via Smithery
+# Installation 
 
-To install MCP-Allure for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@crisschan/mcp-allure):
-
-```bash
-npx -y @smithery/cli install @crisschan/mcp-allure --client claude
-```
-
-### Installing Manually
 To install mcp-repo2llm using uv:
 ```
 {
