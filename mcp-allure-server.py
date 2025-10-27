@@ -1,6 +1,7 @@
 import asyncio
-from mcp.server.fastmcp import FastMCP
+from mcp.server import FastMCP
 from allure_html import AllureSuiteParser
+import json
 
 MCP_SERVER_NAME = "mcp-allure-server"
 mcp=FastMCP(MCP_SERVER_NAME)
@@ -13,7 +14,7 @@ async def get_allure_report(results_dir: str) -> str:
     """
     try:
         parser = AllureSuiteParser(results_dir)
-        return parser.parse()
+        return json.dumps(parser.parse(), indent=2, ensure_ascii=False)
     except Exception as e:
         return str(e)
 
